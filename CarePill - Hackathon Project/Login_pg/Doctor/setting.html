@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings | CarePill</title>
+    <link rel="stylesheet" href="sttings.css">
+    <script defer src="setting.js"></script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">CarePill</div>
+        <ul>
+            <li><a href="Home_pg.html">Home</a></li>
+            <li><a href="Search_patient.html">Search Patients</a></li>
+            <li><a href="alert.html">Alerts</a></li>
+            <li><a href="report.html">Reports</a></li>
+            <li><a href="#">⚙️ Settings</a></li>
+        </ul>
+    </nav>
+
+    <!-- Settings Section -->
+    <div class="settings-container">
+        <h2>⚙️ Account Settings</h2>
+
+        <!-- Profile Settings -->
+        <div class="settings-section">
+            <h3>👤 Profile Settings</h3>
+            <label>Name: <input type="text" id="name" value="Dr. John Doe"></label>
+            <label>Email: <input type="email" id="email" value="johndoe@example.com"></label>
+            <label>Contact: <input type="text" id="contact" value="+91 98765 43210"></label>
+            <button class="save-btn">💾 Save Changes</button>
+        </div>
+
+        <!-- Notification Settings -->
+        <div class="settings-section">
+            <h3>🔔 Notifications</h3>
+            <label><input type="checkbox" id="missedDoseAlert" checked> Alert for Missed Doses</label>
+            <label><input type="checkbox" id="weeklySummary" checked> Weekly Patient Summary</label>
+            <button class="save-btn">💾 Save Preferences</button>
+        </div>
+
+        <!-- Change Password -->
+        <div class="settings-section">
+            <h3>🔑 Change Password</h3>
+            <label>Current Password: <input type="password" id="currentPassword"></label>
+            <label>New Password: <input type="password" id="newPassword"></label>
+            <button class="save-btn">🔄 Update Password</button>
+        </div>
+
+        <!-- Theme Selection -->
+        <div class="settings-section">
+            <h3>🎨 Appearance</h3>
+            <label><input type="radio" name="theme" id="lightMode" checked> Light Mode</label>
+            <label><input type="radio" name="theme" id="darkMode"> Dark Mode</label>
+            <button class="save-btn">🌙 Apply Theme</button>
+        </div>
+
+        <!-- Data Privacy -->
+        <div class="settings-section">
+            <h3>🔒 Data Privacy</h3>
+            <label><input type="checkbox" id="reportAccess" checked> Allow Patient Reports Access</label>
+            <button class="save-btn">💾 Update Privacy</button>
+        </div>
+
+        <!-- Backup & Restore Section -->
+        <div class="settings-section">
+            <h3>📂 Backup & Restore</h3>
+            <button class="save-btn" id="backupData">⬇️ Download Backup</button>
+            <input type="file" id="restoreFile" hidden>
+            <button class="save-btn" id="restoreData">⬆️ Upload Backup</button>
+            <label><input type="checkbox" id="autoBackup"> Enable Automatic Weekly Backup</label>
+        </div>
+
+
+    </div>
+
+</body>
+</html>

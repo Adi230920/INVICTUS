@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Reports | CarePill</title>
+    <link rel="stylesheet" href="report.css">
+    <script defer src="report.js"></script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">CarePill</div>
+        <ul>
+            <li><a href="Home_pg.html">Home</a></li>
+            <li><a href="Search_patient.html">Search Patients</a></li>
+            <li><a href="alert.html">Alerts</a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="setting.html">Settings</a></li>
+        </ul>
+    </nav>
+
+    <!-- Reports Section -->
+    <div class="reports-container">
+        <h2>📄 Patient Reports</h2>
+        
+        <!-- Search Bar -->
+        <input type="text" id="searchPatient" placeholder="🔍 Search by patient name, disease, or date...">
+
+        <div id="reportsList">
+
+            <!-- Report 1 -->
+            <div class="report-card">
+                <img src="https://i.ibb.co/Lzrg5kWM/medical-report-icon-over-white-background-colorful-design-vector-illustration-81874300.webp" alt="Report Icon">
+                <div class="report-info">
+                    <h3>John Doe (Mumbai)</h3>
+                    <p><strong>Disease:</strong> Diabetes</p>
+                    <p><strong>Last Check-up:</strong> 15 Feb 2025</p>
+                    <button class="download-btn">📥 Download</button>
+                    <button class="send-btn">📨 Send to Family</button>
+                </div>
+            </div>
+
+            <!-- Report 2 -->
+            <div class="report-card">
+                <img src="https://i.ibb.co/Lzrg5kWM/medical-report-icon-over-white-background-colorful-design-vector-illustration-81874300.webp" alt="Report Icon">
+                <div class="report-info">
+                    <h3>Sarah Smith (Delhi)</h3>
+                    <p><strong>Disease:</strong> Hypertension</p>
+                    <p><strong>Last Check-up:</strong> 10 Jan 2025</p>
+                    <button class="download-btn">📥 Download</button>
+                    <button class="send-btn">📨 Send to Family</button>
+                </div>
+            </div>
+
+            <!-- Report 3 -->
+            <div class="report-card">
+                <img src="https://i.ibb.co/Lzrg5kWM/medical-report-icon-over-white-background-colorful-design-vector-illustration-81874300.webp" alt="Report Icon">
+                <div class="report-info">
+                    <h3>Rajesh Kumar (Kolkata)</h3>
+                    <p><strong>Disease:</strong> Heart Disease</p>
+                    <p><strong>Last Check-up:</strong> 20 Dec 2024</p>
+                    <button class="download-btn">📥 Download</button>
+                    <button class="send-btn">📨 Send to Family</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

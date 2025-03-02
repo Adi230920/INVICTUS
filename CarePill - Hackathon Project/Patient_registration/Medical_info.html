@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Registration - Step 3 | CarePill</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Patient Registration - Step 3</h2>
+        <form action="patient-profile.html" method="POST" enctype="multipart/form-data">
+            <label for="disease">Select Disease:</label>
+            <select id="disease" name="disease" required>
+                <option value="diabetes">Diabetes</option>
+                <option value="hypertension">Hypertension</option>
+                <option value="asthma">Asthma</option>
+                <!-- Add more diseases as needed -->
+            </select>
+
+            <label for="medicines">Select Prescribed Medicines:</label>
+            <div id="medicine-options">
+                <!-- Medicine options will be populated based on disease selection -->
+            </div>
+
+            <label for="prescription">Upload Prescription:</label>
+            <input type="file" id="prescription" name="prescription">
+
+            <button type="submit" class="btn">Complete Registration</button>
+        </form>
+    </div>
+
+    <script>
+        // JavaScript to dynamically populate medicine options based on selected disease
+        const diseaseSelect = document.getElementById('disease');
+        const medicineOptions = document.getElementById('medicine-options');
+
+        const medicines = {
+            diabetes: ['Metformin', 'Insulin', 'Glipizide'],
+            hypertension: ['Lisinopril', 'Amlodipine', 'Losartan'],
+            asthma: ['Albuterol', 'Fluticasone', 'Montelukast']
+            // Add more diseases and corresponding medicines as needed
+        };
+
+        function updateMedicineOptions() {
+            const selectedDisease = diseaseSelect.value;
+            const options = medicines[selectedDisease] || [];
+            medicineOptions.innerHTML = '';
+            options.forEach(medicine => {
+                const checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                checkbox.name = 'medicines';
+                checkbox.value = medicine;
+                checkbox.id = medicine;
+
+                const label = document.createElement('label');
+                label.htmlFor = medicine;
+                label.textContent = medicine;
+
+                const div = document.createElement('div');
+                div.appendChild(checkbox);
+                div.appendChild(label);
+
+                medicineOptions.appendChild(div);
+            });
+        }
+
+        diseaseSelect.addEventListener('change', updateMedicineOptions);
+
+        // Initialize medicine options on page load
+        updateMedicineOptions();
+    </script>
+</body>
+</html>

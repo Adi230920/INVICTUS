@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Alerts | CarePill</title>
+    <link rel="stylesheet" href="alert.css">
+    <script defer src="alert.js"></script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">CarePill</div>
+        <ul>
+            <li><a href="Home_pg.html">Home</a></li>
+            <li><a href="Search_patient.html">Search Patients</a></li>
+            <li><a href="#">Alerts</a></li>
+            <li><a href="report.html">Reports</a></li>
+            <li><a href="setting.html">Settings</a></li>
+        </ul>
+    </nav>
+
+    <!-- Alerts Section -->
+    <div class="alerts-container">
+        <h2>🔔 Patient Alerts</h2>
+
+        <div id="alertsList">
+
+            <!-- Alert 1 - Missed Dose -->
+            <div class="alert-card" data-id="1">
+                <img src="https://i.ibb.co/Vpps7T5C/th-2.jpg" alt="Alert Image">
+                <div class="alert-info">
+                    <h3>John Doe (Mumbai)</h3>
+                    <p><strong>Alert:</strong> Missed Diabetes Medication</p>
+                    <p><strong>Time:</strong> 08:30 AM</p>
+                    <button class="dismiss-btn">Dismiss</button>
+                    <button class="notify-btn">Notify Family</button>
+                </div>
+            </div>
+
+            <!-- Alert 2 - Critical Condition -->
+            <div class="alert-card critical" data-id="2">
+                <img src="https://i.ibb.co/t6MPwFJ/th-3.jpg" alt="Alert Image">
+                <div class="alert-info">
+                    <h3>Sarah Smith (Delhi)</h3>
+                    <p><strong>Alert:</strong> Blood Pressure Extremely High!</p>
+                    <p><strong>Time:</strong> 10:15 AM</p>
+                    <button class="dismiss-btn">Dismiss</button>
+                    <button class="notify-btn">Notify Family</button>
+                </div>
+            </div>
+
+            <!-- Alert 3 - Regular Follow-up -->
+            <div class="alert-card" data-id="3">
+                <img src="https://i.ibb.co/1GKCrw3S/th.jpg" alt="Alert Image">
+                <div class="alert-info">
+                    <h3>Rajesh Kumar (Kolkata)</h3>
+                    <p><strong>Alert:</strong> Requires Blood Sugar Check</p>
+                    <p><strong>Time:</strong> 02:00 PM</p>
+                    <button class="dismiss-btn">Dismiss</button>
+                    <button class="notify-btn">Notify Family</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

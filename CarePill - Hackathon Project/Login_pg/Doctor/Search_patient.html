@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Patients | CarePill</title>
+    <link rel="stylesheet" href="home_pg.css">
+    <script defer src="search_patiet.js"></script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">CarePill</div>
+        <ul>
+            <li><a href="Home_pg.html">Home</a></li>
+            <li><a href="#">Search Patients</a></li>
+            <li><a href="alert.html">Alerts</a></li>
+            <li><a href="report.html">Reports</a></li>
+            <li><a href="setting.html">Settings</a></li>
+        </ul>
+    </nav>
+
+    <!-- Search Bar -->
+    <div class="search-container">
+        <h2>Search for a Patient</h2>
+        <input type="text" id="searchInput" placeholder="Enter name, disease, or city...">
+    </div>
+
+    <!-- Patient List -->
+    <div class="patients-section">
+        <h2>Nationwide Patient Database</h2>
+        <div id="patientList">
+
+            <!-- Patient 1 -->
+            <div class="patient-card" data-name="John Doe" data-disease="Diabetes" data-city="Mumbai">
+                <img src="https://i.ibb.co/1GKCrw3S/th.jpg" alt="Patient Image">
+                <div class="patient-info">
+                    <h3>John Doe</h3>
+                    <p>Age: 45 | Mumbai</p>
+                    <p>Disease: Diabetes, Hypertension</p>
+                    <p><strong>Last Update:</strong> Blood sugar stable.</p>
+                    <a href="https://lab.mlaw.gov.sg/files/Sample-filled-in-MR.pdf" class="btn">View Report</a>
+                </div>
+            </div>
+
+            <!-- Patient 2 -->
+            <div class="patient-card" data-name="Sarah Smith" data-disease="Cardiac Issues" data-city="Delhi">
+                <img src="https://i.ibb.co/RkXpJZSg/th-1.jpg" alt="Patient Image">
+                <div class="patient-info">
+                    <h3>Sarah Smith</h3>
+                    <p>Age: 52 | Delhi</p>
+                    <p>Disease: Cardiac Issues</p>
+                    <p><strong>Last Update:</strong> Missed medication alert sent.</p>
+                    <a href="https://lab.mlaw.gov.sg/files/Sample-filled-in-MR.pdf" class="btn">View Report</a>
+                </div>
+            </div>
+
+            <!-- More Patients -->
+            <div class="patient-card" data-name="Michael Brown" data-disease="Asthma" data-city="Bangalore">
+                <img src="https://i.ibb.co/Vpps7T5C/th-2.jpg" alt="Patient Image">
+                <div class="patient-info">
+                    <h3>Michael Brown</h3>
+                    <p>Age: 38 | Bangalore</p>
+                    <p>Disease: Asthma</p>
+                    <p><strong>Last Update:</strong> Inhaler used at 8 AM.</p>
+                    <a href="https://lab.mlaw.gov.sg/files/Sample-filled-in-MR.pdf" class="btn">View Report</a>
+                </div>
+            </div>
+
+            <div class="patient-card" data-name="Emma Wilson" data-disease="Arthritis" data-city="Chennai">
+                <img src="https://i.ibb.co/t6MPwFJ/th-3.jpg" alt="Patient Image">
+                <div class="patient-info">
+                    <h3>Emma Wilson</h3>
+                    <p>Age: 60 | Chennai</p>
+                    <p>Disease: Arthritis</p>
+                    <p><strong>Last Update:</strong> Undergoing physiotherapy.</p>
+                    <a href="https://lab.mlaw.gov.sg/files/Sample-filled-in-MR.pdf" class="btn">View Report</a>
+                </div>
+            </div>
+
+            <div class="patient-card" data-name="Rajesh Kumar" data-disease="Hypertension" data-city="Kolkata">
+                <img src="https://i.ibb.co/1GKCrw3S/th.jpg" alt="Patient Image">
+                <div class="patient-info">
+                    <h3>Rajesh Kumar</h3>
+                    <p>Age: 50 | Kolkata</p>
+                    <p>Disease: Hypertension</p>
+                    <p><strong>Last Update:</strong> Medication adjusted.</p>
+                    <a href="https://lab.mlaw.gov.sg/files/Sample-filled-in-MR.pdf" class="btn">View Report</a>
+                </div>
+            </div>
+
+            <div class="patient-card" data-name="Ayesha Khan" data-disease="Migraine" data-city="Hyderabad">
+                <img src="https://i.ibb.co/RkXpJZSg/th-1.jpg" alt="Patient Image">
+                <div class="patient-info">
+                    <h3>Ayesha Khan</h3>
+                    <p>Age: 29 | Hyderabad</p>
+                    <p>Disease: Migraine</p>
+                    <p><strong>Last Update:</strong> New prescription issued.</p>
+                    <a href="https://lab.mlaw.gov.sg/files/Sample-filled-in-MR.pdf" class="btn">View Report</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

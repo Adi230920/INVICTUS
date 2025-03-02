@@ -1,0 +1,212 @@
+/* Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f9ff;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    background: #007BFF;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Medicine Section */
+.medicine-list {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 40px;
+    background: #eef9ff;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.medicine-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.medicine-card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+.take-medicine-btn {
+    background: #007BFF;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.take-medicine-btn:hover {
+    background: #0056b3;
+}
+
+/* Pop-up Reminder */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 30px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    z-index: 1000;
+    width: 400px;
+}
+
+.popup-content {
+    text-align: center;
+}
+
+.popup button {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.popup button:hover {
+    background: #218838;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #3498db;
+    padding: 15px 30px;
+}
+
+.logo img {
+    width: 80px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Home Section */
+.home {
+    padding: 40px;
+    text-align: center;
+}
+
+.alert-box {
+    background: #ffcccc;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.whatsapp-btn {
+    background: #25D366;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.medicine-list {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.medicine-list ul {
+    list-style: none;
+}
+
+.medicine-list li {
+    margin: 10px 0;
+}
+
+.take-medicine {
+    background: #2ecc71;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Popup */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
