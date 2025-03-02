@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | CarePill</title>
+    <link rel="stylesheet" href="d_style.css">
+    <script defer src="d_script.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">CarePill</div>
+        <ul class="nav-links">
+            <li><a href="patient_dashboard.html" class="active">🏠 Home</a></li>
+            <li><a href="doctors_near_me.html">👨‍⚕️ Doctors Near Me</a></li>
+            <li><a href="faq.html">❓ FAQ & Know More</a></li>
+            <li><a href="my_account.html">👤 My Account</a></li>
+        </ul>
+    </nav>
+
+    <!-- Medicine List Section -->
+    <section class="medicine-list">
+        <h2>💊 Your Medicines</h2>
+        <p>Here are your prescribed medicines and their schedules:</p>
+        <div class="medicine-container">
+            <div class="medicine-card">
+                <h3>Paracetamol</h3>
+                <p><strong>Time:</strong> 8:00 AM</p>
+                <button class="take-medicine-btn" onclick="takeMedicine(this)">✅ Take Medicine</button>
+            </div>
+            <div class="medicine-card">
+                <h3>Vitamin D</h3>
+                <p><strong>Time:</strong> 2:00 PM</p>
+                <button class="take-medicine-btn" onclick="takeMedicine(this)">✅ Take Medicine</button>
+            </div>
+            <div class="medicine-card">
+                <h3>Antibiotic</h3>
+                <p><strong>Time:</strong> 9:00 PM</p>
+                <button class="take-medicine-btn" onclick="takeMedicine(this)">✅ Take Medicine</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pop-up Reminder -->
+    <div id="medicine-popup" class="popup">
+        <div class="popup-content">
+            <h3>⏰ Time to Take Medicine!</h3>
+            <p>Please take your medicine now.</p>
+            <button onclick="closePopup()">OK</button>
+        </div>
+    </div>
+
+</body>
+</html>
